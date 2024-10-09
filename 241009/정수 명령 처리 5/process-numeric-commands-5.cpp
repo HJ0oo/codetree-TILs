@@ -8,30 +8,30 @@ int main() {
     cin >> N ;
 
     vector<int> v;
+
     for (int i=0;i<N;i++){
         string command;
+        cin >> command;
         int command_num;
-        cin >> command >> command_num;
-        // 근데 command_num 이 없는 경우를 나눠야하는데..?
 
         if (command == "push_back"){
+            cin >> command_num;
             v.push_back(command_num);
-            cout << "#1#" << command_num << endl;
         }
         else if (command == "pop_back"){
-            cout << "#2#" << command_num << endl;
             v.pop_back();
         }
         else if (command == "size"){
-            cout << "#3#" << v.size() << endl;
+            cout << v.size() << endl;
         }
-        else{
-            //get k
-            cout << "#4#" << v[command_num] << endl;
+        else{ //get k
+            cin >> command_num;
+            cout << v[command_num-1] << endl; // index 조심
         }
-        
-        
-        
+
+        // 근데 command_num 이 없는 경우를 나눠야하는데..
+        // cin에 적용된 추출 연산은 공백을 추출할 값이 종료되는 것으로 인식합니다. 따라서 방금 작성한 코드는 항상 문장에서 첫 단어만 추출됩니다.
+        // 공백이 포함된 한 줄의 입력된 모든 값을 받으려면 추출 연산자 대신 getline 함수를 사용해야 합니다.    
         
     }
 
