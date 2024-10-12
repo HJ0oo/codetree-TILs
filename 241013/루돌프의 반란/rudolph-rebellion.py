@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('input.txt', 'r')
+input=sys.stdin.readline
 
 dxs = [0,1,1,1,0,-1,-1,-1]
 dys = [1,1,0,-1,-1,-1,0,1]
