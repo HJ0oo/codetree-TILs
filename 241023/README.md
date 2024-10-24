@@ -12,7 +12,7 @@
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
-|[Intermediate Mid / 중급 자료구조 / HashMap](https://www.codetree.ai/missions?missionId=8)|[[개념]가장 많은 데이터](https://www.codetree.ai/missions/8/problems/most-data)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/HJ0oo/codetree-TILs/blob/main/241023/%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%80%20%EB%8D%B0%EC%9D%B4%ED%84%B0/most-frequent-data.cpp)|
+|[Intermediate Mid / 중급 자료구조 / HashMap](https://www.codetree.ai/missions?missionId=8)|[[개념]가장 많은 데이터](https://www.codetree.ai/missions/8/problems/most-frequent-data)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/HJ0oo/codetree-TILs/blob/main/241023/%EA%B0%80%EC%9E%A5%20%EB%A7%8E%EC%9D%80%20%EB%8D%B0%EC%9D%B4%ED%84%B0/most-frequent-data.cpp)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
