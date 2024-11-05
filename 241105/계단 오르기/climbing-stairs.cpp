@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int dp[1001] = {};
+long long dp[1001] = {};
 int n;
 int main() {
     cin >> n;
@@ -9,7 +9,9 @@ int main() {
     dp[3] = 1;
     for (int i = 4; i <= n; i++){
         dp[i] = dp[i-2] + dp[i-3];
+        // cout << i <<" "<< dp[i] << endl;
+        dp[i] %= 10007;
     }
-    cout << dp[n] % 10007;
+    cout << dp[n];
     return 0;
 }
