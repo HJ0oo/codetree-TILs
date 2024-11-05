@@ -15,7 +15,7 @@ int main() {
 
     
     
-    for (int i = 0; i < n;i++){
+    for (int i = 0; i < n; i++){
         int temp = -1;
         int happy = 1;
         for (int j = 0; j < n;j++){
@@ -27,7 +27,7 @@ int main() {
             }
             temp = arr[i][j];
         }
-        if (happy == m) {
+        if (happy >= m) {
             ans += 1;
         }
     }
