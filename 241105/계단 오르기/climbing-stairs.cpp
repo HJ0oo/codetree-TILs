@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-long long dp[1001] = {};
+// long long dp[1001] = {};
+int dp[1001] = {};
 int n;
 int main() {
     cin >> n;
