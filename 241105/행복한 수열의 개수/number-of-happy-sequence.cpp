@@ -45,9 +45,11 @@ int main() {
                 happy += 1;
             }
             temp = arr[i][j];
-        }
-        if (happy >= m) {
-            ans += 1;
+            
+            if (happy >= m) {
+                ans += 1;
+                break;
+            }
         }
     }
 
