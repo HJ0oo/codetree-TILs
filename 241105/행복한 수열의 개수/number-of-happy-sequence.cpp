@@ -26,9 +26,11 @@ int main() {
                 happy += 1;
             }
             temp = arr[i][j];
-        }
-        if (happy >= m) {
-            ans += 1;
+            
+            if (happy >= m) { // for j 밖에서 if문 실행 시 중간에 이미 happy를 만족했음에도 불구하고 초기화되는 케이스를 잡아내지 못함 - 주의
+                ans += 1;
+                break;
+            }
         }
     }
 
