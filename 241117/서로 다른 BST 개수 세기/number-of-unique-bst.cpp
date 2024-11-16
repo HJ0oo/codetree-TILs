@@ -9,9 +9,9 @@ int main() {
     arr[1] = 1;
     arr[2] = 1 * 1 + 1 * 1;
     for (int i = 3; i < n+1; i++) {
-        for (int j = i-1; j >= 0; i--) {
+        for (int j = i-1; j >= 0; j--) {
             arr[i] += arr[j] * arr[i-1-j];
-        }
+        }    
     }
     cout << arr[n];
     return 0;
