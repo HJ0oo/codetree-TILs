@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int arr[1001] = {0};
+int sum[1001] = {0};
 int n;
 
 int main() {
@@ -13,9 +14,16 @@ int main() {
     arr[1] = 2;
     arr[2] = 7;
     arr[3] = 22;
+
+    sum[1] = 2;
+    sum[2] = 9;
+    sum[3] = 31;    
+
     for (int i=4; i<n+1; i++) {
-        arr[i] = arr[i-1] * 2 + arr[i-2] * 3 + arr[i-3] * 2 + 2;
-        arr[i] %= 1000000007;   
+        arr[i] = arr[i-1] * 2 + arr[i-2] * 3 + sum[i-3] * 2 + 2;
+        sum[i] = sum[i-1] + arr[i];
+        arr[i] %= 1000000007;
+        sum[i] %= 1000000007;
     }
     cout << arr[n];
     return 0;
