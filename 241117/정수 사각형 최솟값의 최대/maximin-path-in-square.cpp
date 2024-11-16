@@ -19,13 +19,16 @@ int main() {
 
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
-            if (i == 0) {
+            if (( i == 0) && (j == 0)){
+                ans[i][j] = arr[i][j];
+            }
+            else if (i == 0) {
                 ans[i][j] = min(arr[i][j] , arr[i][j-1]);
             }
-            if (j == 0) {
+            else if (j == 0) {
                 ans[i][j] = min(arr[i][j] , arr[i-1][j]);
             }
-            if (( i != 0) && (j != 0)){
+            else {
                 ans[i][j] = min( max(ans[i][j-1],ans[i-1][j]) , arr[i][j]);
             }            
             // cout << i << " " << j << " " << ans[i][j] << endl;
