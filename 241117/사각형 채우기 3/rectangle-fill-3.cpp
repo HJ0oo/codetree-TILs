@@ -22,7 +22,9 @@ int main() {
     for (int i=4; i<n+1; i++) {
         arr[i] = arr[i-1] * 2 + arr[i-2] * 3 + sum[i-3] * 2 + 2;
         sum[i] = sum[i-1] + arr[i];
+        arr[i] %= 1000000007;
+        sum[i] %= 1000000007;
     }
-    cout << arr[n] % 1000000007;
+    cout << arr[n];
     return 0;
 }
