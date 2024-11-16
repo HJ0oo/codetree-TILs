@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-int arr[1001] = {0};
-int sum[1001] = {0};
+long long arr[1001] = {0};
+long long sum[1001] = {0};
 int n;
 
 int main() {
