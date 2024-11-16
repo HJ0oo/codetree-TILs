@@ -23,13 +23,13 @@ int main() {
                 ans[i][j] = arr[i][j];
             }
             else if (i == 0) {
-                ans[i][j] = min(arr[i][j] , arr[i][j-1]);
+                ans[i][j] = min(arr[i][j] , ans[i][j-1]);
             }
             else if (j == 0) {
-                ans[i][j] = min(arr[i][j] , arr[i-1][j]);
+                ans[i][j] = min(arr[i][j] , ans[i-1][j]);
             }
             else {
-                ans[i][j] = min( max(ans[i][j-1],ans[i-1][j]) , arr[i][j]);
+                ans[i][j] = min( max(ans[i][j-1], ans[i-1][j]) , arr[i][j]);
             }            
             // cout << i << " " << j << " " << ans[i][j] << endl;
         }
