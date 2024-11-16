@@ -17,13 +17,16 @@ int main() {
     // (0,n-1) > (n-1,0) 왼쪽 혹은 밑으로만 이동
     for(int i = 0; i <= n-1; i++){
         for(int j = n-1; j >= 0; j--){
-            if (i == 0) {
+            if (( i == 0) && (j == n-1)){
+                ans[i][j] = arr[i][j];
+            }
+            else if (i == 0) {
                 ans[i][j] = arr[i][j] + ans[i][j+1];
             }
-            if (j == n-1) {
+            else if (j == n-1) {
                 ans[i][j] = arr[i][j] + ans[i-1][j];
             }
-            if (( i != 0) && (j != n-1)){
+            else {
                 ans[i][j] = min(ans[i][j+1],ans[i-1][j]) + arr[i][j];
             }            
             // cout << i << " " << j << " " << ans[i][j] << endl;
