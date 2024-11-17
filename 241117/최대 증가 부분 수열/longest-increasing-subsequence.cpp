@@ -13,7 +13,7 @@ int main() {
     }
 
     for (int i=1; i<n+1; i++){
-        dp[arr[i]] = reduce(dp,dp + arr[i]+1, 0, max<int>) + 1;
+        dp[arr[i]] = reduce(dp,dp + arr[i], 0, max<int>) + 1;
         // cout <<  dp[arr[i]]  << " , i는 " << arr[i] << endl;
     }
 
