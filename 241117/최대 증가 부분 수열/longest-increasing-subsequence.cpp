@@ -1,7 +1,7 @@
+/*
 #include <iostream>
 #include <numeric> 
 using namespace std;
-
 int n;
 int arr[1001] = {0};
 int dp[10001] = {0};
@@ -21,8 +21,7 @@ int main() {
     cout << reduce(dp,dp + max_thing+1, 0, max<int>);
     return 0;
 }
-
-/*
+*/
 #include <iostream>
 #include <climits>
 #include <algorithm>
@@ -75,4 +74,3 @@ int main() {
 
     cout << answer;
 }
-*/
